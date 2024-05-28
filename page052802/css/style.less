@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Source Han Sans CN, Source Han Sans CN;
+    font-weight: 400;
+    box-sizing:border-box
+}
+
+body {
+    background-color: #F5F5F8;
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 27px;
+    }
+}
+
+//轮播图
+.focus {
+    position: relative;
+    /* width: 40rem; */
+    // height: 15rem;
+    height: 20rem;
+    width: 100vw;
+    /* margin: 5rem auto; */
+    overflow: hidden;
+}
+
+.picture {
+    position: absolute;
+    top: 0;
+    /* left: -40rem; */
+    left: -100vw;
+    width: 700%;
+}
+
+.picture li {
+    float: left;
+    list-style: none;
+}
+
+.picture img {
+    /* width: 40rem; */
+    width: 100vw;
+    object-fit: cover;
+    /* height: 15rem; */
+}
+
+.circle {
+    position: absolute;
+    width: 10rem;
+    height: .7rem;
+    right: .8rem;
+    bottom: .7rem;
+    list-style-type: none;
+}
+
+.circle li {
+    float: right;
+    width: .8rem;
+    height: .7rem;
+    margin: 0 .3rem;
+    background-color: aliceblue;
+    border-radius: 30%;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.circle .current {
+    width: 1.2rem;
+    background-color: rgb(16, 136, 242);
+}
+
+//轮播图
+
+//仲达出游
+.titleOfAll {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+}
+
+// 仲达出游
+
+//报价框
+.quoteBox {
+    background-color: white;
+    height: 14rem;
+    width: 100vw;
+
+    position: relative;
+    top: -1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: self-start;
+}
+
+//报价框
+
+// 发布人
+.publisherBox {
+    background-color: white;
+    height: 7rem;
+    width: 100vw;
+
+    position: relative;
+    border-radius: 1rem;
+
+    display: flex;
+    // flex-direction: column;  //主轴切换
+    // justify-content: center;
+    align-items: center;
+
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//发布人
+
+//简介
+.synopsisBox {
+    background-color: white;
+    height: 18rem;
+    width: 100vw;
+    margin-top: 1rem;
+
+    position: relative;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column; //主轴切换
+    // justify-content: center;
+    align-items: center;
+
+    .synopsisBoxButtons {
+        height: 4rem;
+        width: 100vw;
+
+        position: relative;
+        border-bottom: 1px solid #eeeef3;
+
+        display: flex;
+        // flex-direction: column; //主轴切换
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.4rem;
+        color: #283746;
+    }
+
+
+
+    .section {
+        display: none;
+    }
+
+    .active {
+        flex-grow: 999;
+        /* 使得信息栏占据剩余的所有高度 */
+        width: 100vw;
+
+        display: flex;
+        // flex-direction: column; //主轴切换
+        justify-content: center;
+        align-items: center;
+
+        .sectionText {
+            display: flex;
+            flex-direction: column; //主轴切换
+        }
+    }
+}
+
+button {
+    /* 清除按钮元素自带样式 */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+//简介
+
+//行程简介
+.hodometerBox {
+    background-color: white;
+    height: 88rem;
+    width: 100vw;
+    margin-top: 1rem;
+
+    position: relative;
+    border-radius: 1rem;
+
+
+    display: flex;
+    flex-direction: column; //主轴切换
+    // justify-content: center; //主轴没变的话就是左右居中
+    align-items: center; //主轴没变的话就是上下居中
+
+    .hodometerBoxTitle {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        padding-block: 1rem;
+        border-bottom: 1px solid #eeeef3;
+    }
+
+    .chuFa {
+        width: 100vw;
+
+        display: flex;
+        justify-content: center; //主轴没变的话就是左右居中
+        align-items: center; //主轴没变的话就是上下居中
+
+        padding-top: 5rem;
+
+        .chuFaText {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            padding-left: 3rem;
+        }
+
+        .chuFaIcobox {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            // margin: 0.5rem;
+            border-radius: 50%;
+            border: 1px solid #647382;
+        }
+    }
+
+    .stagesBox {
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column; //主轴切换
+        // justify-content: left; //主轴没变的话就是左右居中
+        // align-items: center; //主轴没变的话就是上下居中
+
+        .flyBox {
+
+            height: 10rem;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+
+            overflow: hidden;
+
+            .flyBoxText{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                span{
+                    padding-left: 0.5rem;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}

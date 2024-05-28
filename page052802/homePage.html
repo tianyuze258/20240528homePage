@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <!-- 轮播图 -->
+    <div class="focus">
+        <ul class="picture">
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+            <li><a><img src="img\jhk-1584328253194.png" /></a></li>
+        </ul>
+        <ol class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="current"></li>
+        </ol>
+    </div>
+    <!-- 轮播图 -->
+
+    <!-- 报价框 -->
+    <div class="titleOfAll"><span>仲达出游</span></div>
+    <div class="quoteBox">
+        <span style="font-weight: bold; font-size: 1.8rem; flex-grow: 1;padding-inline: 1rem;padding-top:1rem ;">常州香格里拉大酒店2-4日游</span>
+
+        <span style="font-size: 1.6rem;color: #283746;flex-grow: 1;padding-inline: 1rem;padding-top:1rem ;">499元起预售活动，四大景区度假任你选，主题住宿+景区游览</span>
+
+        <span style="font-size: 1.4rem;font-weight: bold;color: red;flex-grow: 1;padding-inline: 1rem;padding-top:1rem ;">
+            ￥
+            <span style="font-size: 2.4rem;font-weight: bold;">299</span>
+            <span style="font-size: 1.2rem;color: #647382;">/人</span>
+        </span>
+    </div>
+    <!-- 报价框 -->
+
+    <!-- 发布人 -->
+    <div class="publisherBox">
+        <img style="margin: 0.5rem;" src="img\椭圆形-4.png" alt="椭圆形-4">
+        <div>
+            <span style="font-weight: bold;font-size: 1.6rem; margin-bottom: 0.5rem;">德周旅行社</span>
+            <span style="font-size: 1.2rem;color: #647382;">2019-12-12 10:00 发布丨2个月前编辑</span>
+        </div>
+    </div>
+    <!-- 发布人 -->
+
+    <!-- 简介 -->
+    <div class="synopsisBox">
+        <div class="synopsisBoxButtons"><!-- 点击 -->
+            <div style="display: flex;flex-grow: 1;justify-content: center;"><button
+                    onclick="toggleContent('section1')">领队介绍</button></div>
+            <div style="display: flex;flex-grow: 1;justify-content: center;"><button
+                    onclick="toggleContent('section2')">行程介绍</button></div>
+            <div style="display: flex;flex-grow: 1;justify-content: center;"><button
+                    onclick="toggleContent('section3')">费用介绍</button></div>
+            <div style="display: flex;flex-grow: 1;justify-content: center;"><button
+                    onclick="toggleContent('section4')">温馨提示</button></div>
+        </div>
+        <div class="section" id="section1">
+            <img style="max-height: 8rem; max-width: 8rem;margin: 0.5rem;" src="img\矩形.png" alt="矩形">
+            <div class="sectionText">
+                <span style="font-weight: bold;font-size: 1.6rem; flex-grow: 1;margin-block: 0.5rem;">周倩倩</span>
+                <span style="font-size: 1.4rem; flex-grow: 1;">18100000000</span>
+                <span
+                    style="font-size: 1.2rem;color: #647382; flex-grow: 1;">3年开始混迹户外圈,05年有幸成为上海三夫户外俱乐部首位活动会员,07年成为上海三夫首批兼职领队;足迹遍布大江南北
+                    ,寻觅沿途各种美食~擅长各种大型户外体育赛事策划.</span>
+            </div>
+        </div>
+        <div class="section" id="section2">内容2</div>
+        <div class="section" id="section3">内容3</div>
+        <div class="section" id="section4">内容4</div>
+    </div>
+    <!-- 简介 -->
+
+    <!-- 行程介绍 -->
+    <div class="hodometerBox">
+        <div class="hodometerBoxTitle"><span style="font-weight: bold;font-size: 1.8rem;">行程介绍</span></div>
+
+        <div class="chuFa">
+            <div class="chuFaText" style="flex-grow: 1;">
+                <span style="font-weight: bold;font-size: 2rem;color: #09b91e;">出发点</span>
+                <span style="font-size: 1.2rem;color: #283746;">河北省石家庄市中华北大街与西二环交叉口</span>
+                <span style="font-size: 1.2rem;color: #283746;">2020年3月20日 星期五 15:00</span>
+            </div>
+
+            <div style="width: 0;                                       
+                        height: 4.5rem;               
+                        border-left: 1px solid #c1c9da;"></div> <!-- 这是一个分割线 -->
+
+            <div style="display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-grow: 1;">
+                <div class="chuFaIcobox">
+                    <div style="width: 0px;
+                            height: 0px;
+                            border-top: 0 solid transparent;
+                            border-bottom: 2rem solid  #647382;
+                            border-left: 1rem solid   transparent;
+                            border-right: 1rem solid  transparent;
+                            position: relative;
+                            top: 0.3rem;
+                            left: 0.5rem;">
+                        <div style="width: 0px;
+                            height: 0px;
+                            border-top: 0 solid transparent;
+                            border-bottom: 0.5rem solid  white;
+                            border-left: 1rem solid   transparent;
+                            border-right: 1rem solid  transparent;
+                            position: relative;
+                            top: 1.5rem;
+                            left: -1rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stagesBox">
+            <span style="font-weight: bold;font-size: 2rem;padding-left: 3rem;padding-top: 1.5rem;">旅途驿站</span>
+            <span style="font-size: 1.2rem;color: #283746;padding-left: 3rem;padding-block: 1.5rem;">3月20日 星期五</span>
+            <div style="padding-left: 3rem;padding-right: 2rem;">
+                <div class="flyBox">
+                    <div style="height: 10rem;min-width: 10rem;"><img srcset="img\位图.png 100w, img\位图@2x.png 200w"
+                            sizes="(max-width: 430px) 100px,200px" src="img\位图.png" alt="位图"
+                            style="width: 100%;height: 100%;object-fit: cover;"></div>
+                    <div class="flyBoxText">
+                        <span style="font-weight: bold;font-size: 1.6rem;">锦绣山庄></span>
+                        <span style="font-size: 1.2rem;color: #4883f1;">18:00-19:00</span>
+                        <span
+                            style="font-size: 1rem;color: #283746;padding-right: 2rem;">整个山庄邀请湖北美术学院吴珏老师及其带领的团队主持建筑景观整体规划……</span>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-left: 3rem;padding-right: 2rem;padding-top: 1.5rem;">
+                <div class="flyBox">
+                    <div style="height: 10rem;min-width: 10rem;"><img srcset="img\位图备份.png 100w, img\位图备份@2x.png 200w"
+                            sizes="(max-width: 430px) 100px,200px" src="img\位图.png" alt="位图"
+                            style="width: 100%;height: 100%;object-fit: cover;"></div>
+                    <div class="flyBoxText">
+                        <span style="font-weight: bold;font-size: 1.6rem;">加利福尼亚酒店></span>
+                        <span style="font-size: 1.2rem;color: #4883f1;">18:00-19:00</span>
+                        <span
+                            style="font-size: 1rem;color: #283746;padding-right: 2rem;">整个山庄邀请湖北美术学院吴珏老师及其带领的团队主持建筑景观整体规划……</span>
+                    </div>
+                </div>
+            </div>
+            <span style="font-size: 1.2rem;color: #283746;padding-left: 3rem;padding-block: 1.5rem;">3月21日 星期六</span>
+            <div style="padding-left: 3rem;padding-right: 2rem;">
+                <div class="flyBox">
+                    <div style="height: 10rem;min-width: 10rem;"><img srcset="img\位图备份.png 100w, img\位图备份@2x.png 200w"
+                            sizes="(max-width: 430px) 100px,200px" src="img\位图.png" alt="位图"
+                            style="width: 100%;height: 100%;object-fit: cover;"></div>
+                    <div class="flyBoxText">
+                        <span style="font-weight: bold;font-size: 1.6rem;">香格里拉></span>
+                        <span style="font-size: 1.2rem;color: #4883f1;">8:00-19:00</span>
+                        <span
+                            style="font-size: 1rem;color: #283746;padding-right: 2rem;">整个山庄邀请湖北美术学院吴珏老师及其带领的团队主持建筑景观整体规划……</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stagesBox" style="padding-top: 0;">
+            <span style="font-weight: bold;font-size: 2rem;padding-left: 3rem;padding-top: 1.5rem;">折返点</span>
+            <div style="padding-left: 3rem;padding-right: 2rem;padding-top: 1.5rem;">
+                <div class="flyBox">
+                    <div style="height: 10rem;min-width: 10rem;"><img srcset="img\位图.png 100w, img\位图@2x.png 200w"
+                            sizes="(max-width: 430px) 100px,200px" src="img\位图.png" alt="位图"
+                            style="width: 100%;height: 100%;object-fit: cover;"></div>
+                    <div class="flyBoxText">
+                        <span style="font-weight: bold;font-size: 1.6rem;">香格里拉大酒店></span>
+                        <span style="font-size: 1.2rem;color: #4883f1;">8:00-19:00</span>
+                        <span
+                            style="font-size: 1rem;color: #283746;padding-right: 2rem;">整个山庄邀请湖北美术学院吴珏老师及其带领的团队主持建筑景观整体规划……</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chuFa" style="padding-top: 3rem;">
+            <div class="chuFaText" style="flex-grow: 1;">
+                <span style="font-weight: bold;font-size: 2rem;color: red;">终点</span>
+                <span style="font-size: 1.2rem;color: #283746;">河北省石家庄市中华北大街与西二环交叉口</span>
+                <span style="font-size: 1.2rem;color: #283746;">2020年3月20日 星期五 15:00</span>
+            </div>
+
+            <div style="width: 0;                                       
+                        height: 4.5rem;               
+                        border-left: 1px solid #c1c9da;"></div> <!-- 这是一个分割线 -->
+
+            <div style="display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-grow: 1;">
+                <div class="chuFaIcobox">
+                    <div style="width: 0px;
+                            height: 0px;
+                            border-top: 0 solid transparent;
+                            border-bottom: 2rem solid  #647382;
+                            border-left: 1rem solid   transparent;
+                            border-right: 1rem solid  transparent;
+                            position: relative;
+                            top: 0.3rem;
+                            left: 0.5rem;">
+                        <div style="width: 0px;
+                            height: 0px;
+                            border-top: 0 solid transparent;
+                            border-bottom: 0.5rem solid  white;
+                            border-left: 1rem solid   transparent;
+                            border-right: 1rem solid  transparent;
+                            position: relative;
+                            top: 1.5rem;
+                            left: -1rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 行程介绍 -->
+
+    <!-- 费用介绍 -->
+    <div class="hodometerBox" style="height: 40rem;justify-content: left;">
+        <div class="hodometerBoxTitle"><span style="font-weight: bold;font-size: 1.8rem;">费用介绍</span></div>
+        <div style="padding-left: 10%; width: 100vw; flex-grow: 1; display: flex; flex-direction: column; justify-content: left;">
+            <span style="font-weight: bold;font-size: 1.6rem;padding-top: 1.5rem;">出行价<span style="font-weight: bold;font-size: 1.6rem;padding-left: 3rem;">1000元/人</span></span>
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1.5rem;">该价格为单人价格，最终价格以实际人数计算</span>
+            <span style="font-weight: bold;font-size: 1.6rem;padding-top: 1.5rem;">报价包含</span>        
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1.5rem;">1、酒店：当地星级酒店，可根据您要求进行调整；</span>
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1rem;">2、行程中部分景点门票；</span>
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1rem;">3、用车：根据出行人数安排5座/7座/10座车。</span>
+            <span style="font-weight: bold;font-size: 1.6rem;padding-top: 1.5rem;">报价不包含</span>  
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1.5rem;">1、一切个人消费及费用包含中未提及的项目</span>
+            <span style="font-weight: bold;font-size: 1.6rem;padding-top: 1.5rem;">优惠</span> 
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1.5rem;">1.2米以下儿童免费</span>
+        </div>
+    </div>
+    <!-- 费用介绍 -->
+
+    <!-- 温馨提示 -->
+    <div class="hodometerBox" style="height: 10rem;justify-content: left;">
+        <div class="hodometerBoxTitle"><span style="font-weight: bold;font-size: 1.8rem;">温馨提示</span></div>
+        <div style="padding-left: 10%; width: 100vw; flex-grow: 1; display: flex; flex-direction: column; justify-content: left;">
+            <span style="font-size: 1.2rem;color: #283746;padding-top: 1.5rem;">行程中请保管好个人财务，以免造成不必要的损失</span>
+        </div>
+    </div>
+    <!-- 温馨提示 -->
+
+    <!-- 报名参加 -->
+    <div style="display: flex;background-color: white; margin-top: 1.5rem;width: 100vw;justify-content: center;">
+        <div style="display: inline;padding-block: 1.5rem;padding-inline: 5rem; background-color: #4883f1;border-radius: 2rem;">
+            <a href="#" style="font-weight: bold;font-size: 1.6rem;color: white;"><button>报名参与</button></a>
+        </div>
+    </div>
+    <!-- 报名参加 -->
+    <script src="js\jsHomePage.js"></script>
+</body>
+
+</html>
