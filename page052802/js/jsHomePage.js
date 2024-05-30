@@ -91,4 +91,15 @@ function toggleContent(sectionId) {
     // 添加active类到当前section
     document.getElementById(sectionId).classList.add('active');
 }
+function buttonContent(buttonId) {
+    // 获取所有section元素
+    var buttons = document.getElementsByClassName('tabButtons');
+    // 遍历所有section，移除active类
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('buttonActive');
+    }
+    // 添加active类到当前section
+    document.getElementById(buttonId).classList.add('buttonActive');
+}
+
 //简介

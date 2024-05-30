@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Source Han Sans CN, Source Han Sans CN;
     font-weight: 400;
-    box-sizing:border-box
+    box-sizing: border-box
 }
 
 body {
@@ -150,6 +150,41 @@ body {
     align-items: self-start;
 }
 
+.quoteBoxTitle {
+    font-weight: bold;
+    font-size: 1.8rem;
+    flex-grow: 1;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+}
+
+.quoteBoxText {
+    font-size: 1.6rem;
+    color: #283746;
+    flex-grow: 1;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+}
+
+.quoteBoxPrice {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: red;
+    flex-grow: 1;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+
+    .quoteBoxPriceAlter1 {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    .quoteBoxPriceAlter2 {
+        font-size: 1.2rem;
+        color: #647382;
+    }
+}
+
 //报价框
 
 // 发布人
@@ -167,11 +202,25 @@ body {
     align-items: center;
 
 
+    img {
+        margin: 0.5rem;
+    }
 
     div {
         display: flex;
         flex-direction: column;
     }
+}
+
+.publisherName {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.publishTime {
+    font-size: 1.2rem;
+    color: #647382;
 }
 
 //发布人
@@ -207,7 +256,21 @@ body {
         color: #283746;
     }
 
+    .tabButton {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .tabButtons{
+        display: inline;
+    }
+    .buttonActive{
+        font-weight: bold;
+        font-size: 1.6rem;
 
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid red;
+    }
 
     .section {
         display: none;
@@ -223,9 +286,33 @@ body {
         justify-content: center;
         align-items: center;
 
+        img {
+            max-height: 8rem;
+            max-width: 8rem;
+            margin: 0.5rem;
+        }
+
         .sectionText {
             display: flex;
             flex-direction: column; //主轴切换
+
+            .sectionName {
+                font-weight: bold;
+                font-size: 1.6rem;
+                flex-grow: 1;
+                margin-block: 0.5rem;
+            }
+
+            .sectionPhoneNumber {
+                font-size: 1.4rem;
+                flex-grow: 1;
+            }
+
+            .sectionDetailInfo {
+                font-size: 1.2rem;
+                color: #647382;
+                flex-grow: 1;
+            }
         }
     }
 }
@@ -246,7 +333,7 @@ button {
 //行程简介
 .hodometerBox {
     background-color: white;
-    height: 88rem;
+    height: 90rem;
     width: 100vw;
     margin-top: 1rem;
 
@@ -259,6 +346,35 @@ button {
     // justify-content: center; //主轴没变的话就是左右居中
     align-items: center; //主轴没变的话就是上下居中
 
+    .timeLine{
+        width: 0;
+        height: 85%;
+
+        position: absolute;
+        top: 9rem;
+        left: 1.45rem;
+
+        border: 1px solid #c1c9da;
+    }
+    .dot {
+        position: relative;
+        top: -2.8rem;
+        left: 1rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        background-color: #c1c9da;
+    }
+    .dot.start{
+        position: absolute;
+        top: 8rem;
+        left: 1rem;
+    }
+    // .dot.end{
+    //     position: relative;
+    //     top: 88rem;
+    //     left: 1rem;
+    // }
     .hodometerBoxTitle {
         display: flex;
         width: 100vw;
@@ -266,6 +382,12 @@ button {
         align-items: center;
         padding-block: 1rem;
         border-bottom: 1px solid #eeeef3;
+
+        span {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+
     }
 
     .chuFa {
@@ -275,7 +397,7 @@ button {
         justify-content: center; //主轴没变的话就是左右居中
         align-items: center; //主轴没变的话就是上下居中
 
-        padding-top: 5rem;
+        padding-top: 3rem;
 
         .chuFaText {
             display: flex;
@@ -283,15 +405,71 @@ button {
             align-items: left;
             justify-content: center;
             padding-left: 3rem;
+
+            flex-grow: 1;
+
+            span {
+                font-size: 1.2rem;
+                color: #283746;
+            }
+
+            .chuFaTitle {
+                font-weight: bold;
+                font-size: 2rem;
+                color: #09b91e;
+            }
+
+            .zhongDianTitle {
+                font-weight: bold;
+                font-size: 2rem;
+                color: red;
+            }
         }
 
-        .chuFaIcobox {
+        .chuFaIcoBoxBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .chuFaIcoBox {
             width: 3rem;
             height: 3rem;
             display: flex;
             // margin: 0.5rem;
             border-radius: 50%;
             border: 1px solid #647382;
+        }
+
+        .bigTriangle {
+            width: 0px;
+            height: 0px;
+            border-top: 0 solid transparent;
+            border-bottom: 2rem solid #647382;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            position: relative;
+            top: 0.3rem;
+            left: 0.5rem;
+        }
+
+        .smallTriangle {
+            width: 0px;
+            height: 0px;
+            border-top: 0 solid transparent;
+            border-bottom: 0.5rem solid white;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            position: relative;
+            top: 1.5rem;
+            left: -1rem;
+        }
+
+        .divideMainLine {
+            width: 0;
+            height: 4.5rem;
+            border-left: 1px solid #c1c9da;
         }
     }
 
@@ -303,7 +481,37 @@ button {
         // justify-content: left; //主轴没变的话就是左右居中
         // align-items: center; //主轴没变的话就是上下居中
 
+        .stagesBoxTitle {
+            font-weight: bold;
+            font-size: 2rem;
+            padding-left: 3rem;
+            padding-top: 1.5rem;
+        }
+
+        .stagesBoxTime {
+            font-size: 1.2rem;
+            color: #283746;
+            padding-left: 3rem;
+            padding-block: 1.5rem;
+        }
+
+
+
+        .flyBoxBox {
+            padding-left: 3rem;
+            padding-right: 2rem;
+        }
+
+        .flyBoxBox:first-child {
+            /* 为了使两个相邻元素之间产生间距 */
+            padding-left: 3rem;
+            padding-right: 2rem;
+            padding-bottom: 1.5rem;
+        }
+
+
         .flyBox {
+            position: relative;
 
             height: 10rem;
             border-radius: 1rem;
@@ -315,11 +523,65 @@ button {
 
             overflow: hidden;
 
-            .flyBoxText{
+            .cornerMark{
+                display: inline;
+
+                width: 4rem;
+                
+                font-size: 1rem;
+                color: white;
+
+                text-align: center;
+
+                background-color: #4883f1;
+                border-radius: 0 1rem 0 1rem;
+
+                position: absolute;
+                top: 0rem;
+                right: 0rem;
+            }
+            .cornerMark.alter1{
+                background-color: red;
+            }
+
+
+
+            .flyBoxImgBox {
+                height: 10rem;
+                min-width: 10rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .flyBoxTitle {
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+
+            .flyBoxTime {
+                font-size: 1.2rem;
+                color: #4883f1;
+                line-height: 2.5rem;
+            }
+
+            .flyBoxInfo {
+                font-size: 1rem;
+                color: #283746;
+                padding-right: 2rem;
+                line-height: 2rem;
+            }
+
+            .flyBoxText {
                 display: flex;
                 flex-direction: column;
                 align-items: left;
-                span{
+
+
+                span {
                     padding-left: 0.5rem;
                 }
             }
@@ -330,7 +592,98 @@ button {
     }
 }
 
-a{
+//行程简介
+
+a {
     text-decoration: none;
     color: #000;
 }
+
+
+/* 费用介绍 */
+.hodometerBox.Alter1 {
+    height: 45rem;
+}
+
+.feeBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+
+    .feeBoxTitle {
+        display: flex;
+
+        padding: 1.5rem;
+
+        span {
+            font-weight: bold;
+            font-size: 1.6rem;
+
+            flex-grow: 1;
+            /* 标题中span之间空隙 */
+        }
+    }
+
+
+
+}
+
+.feeBoxText {
+    display: flex;
+    flex-direction: column;
+
+    padding-inline-start: 1.5rem;
+
+    span {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* 费用介绍 */
+
+/* 温馨提示 */
+.hodometerBox.Alter2 {
+    height: 10rem;
+}
+
+/* 温馨提示 */
+
+/* 收银台 */
+.cashBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 1rem;
+
+    width: 100vw;
+    height: 6rem;
+
+    background-color: white;
+
+    .paymentButtonBox {
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .paymentButton {
+        font-size: 1.6rem;
+        color: white;
+
+        width: 80%;
+        height: 5rem;
+        background-color: #4883f1;
+
+        border-radius: 2.5rem;
+    }
+}
+
+/* 收银台 */
